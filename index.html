@@ -1,0 +1,57 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="./scripts/jquery-ui-1.12.0/jquery-ui.min.css">
+  <link rel="stylesheet" href="./scripts/jquery-ui-1.12.0/jquery-ui.theme.min.css">
+ 
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="topbar">
+      <div id="title">Code Player</div>
+
+      <div id="menu">
+        <ul>
+          <li class="menuitem" id="html">HTML</li>
+          <li class="menuitem" id="css">CSS</li>
+          <li class="menuitem" id="js">JS</li>
+          <li class="menuitem" id="output">Output</li>
+        </ul>
+      </div>
+
+    </div>
+    <div id="panes">
+      <div class="pane" id="panehtml">
+        <div class="panetitle">HTML</div>
+        <textarea class="panecontent code"><h1>Hello World<h1><p id="paragraph">nothing</p></textarea>
+      </div>
+
+      <div class="pane" id="panecss">
+        <div class="panetitle">CSS</div>
+        <textarea class="panecontent code">h1{color:blue}</textarea>
+      </div>
+
+      <div class="pane" id="panejs">
+        <div class="panetitle">JS</div>
+        <textarea class="panecontent code">document.getElementById("paragraph").innerHTML = "Hello Kirsty!";</textarea>
+      </div>
+
+      <div class="pane fixed" id="paneoutput">
+        <div class="panetitle">Output</div>
+        <iframe id="outputframe" class="panecontent"></iframe>
+      </div>
+
+    </div>
+
+    <script src="./scripts/jquery-3.1.0.min.js"></script>
+    <script src="./scripts/jquery-ui-1.12.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+
+</body>
+
+</html>
